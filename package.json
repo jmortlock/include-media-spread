@@ -21,5 +21,23 @@
   "bugs": {
     "url": "https://github.com/jackmcpickle/include-media-spread/issues"
   },
-  "homepage": "https://github.com/jackmcpickle/include-media-spread#readme"
+  "homepage": "https://github.com/jackmcpickle/include-media-spread#readme",
+  "devDependencies": {
+    "coffee-script": "^1.10.0",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-sass-lint": "^1.1.1",
+    "mocha": "^2.5.3",
+    "node-sass": "^3.8.0",
+    "run-sequence": "^1.2.1",
+    "sass-true": "^2.0.3",
+    "sassytester": "^1.0.0"
+  },
+  "scripts": {
+    "test": "mocha",
+    "sass": "node-sass",
+    "prepublish": "npm run test",
+    "start": "gulp"
+  }
 }
