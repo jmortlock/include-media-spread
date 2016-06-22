@@ -1,0 +1,13 @@
+@function compare-lists($start, $end) {
+  // combines lists with matching pairs
+  $list: zip($start, $end);
+  $change-list: ();
+  // calculate change value on pairs
+
+  @each $l in $list {
+    $change: nth($l, 2) - nth($l, 1);
+    $change-list: join($change-list, $change, comma);
+  }
+
+  @return clean-list($change-list);
+}
