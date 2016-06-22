@@ -31,8 +31,7 @@
     "mocha": "^2.5.3",
     "node-sass": "^3.8.0",
     "run-sequence": "^1.2.1",
-    "sass-true": "^2.0.3",
-    "sassytester": "^1.0.0"
+    "sass-true": "^2.0.3"
   },
   "scripts": {
     "test": "mocha",
