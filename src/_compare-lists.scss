@@ -9,5 +9,5 @@
     $change-list: join($change-list, $change, comma);
   }
 
-  @return clean-list($change-list);
+  @return $change-list;
 }

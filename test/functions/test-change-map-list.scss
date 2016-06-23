@@ -5,7 +5,7 @@
     $end-value: 80px;
 
     $test: change-map-list($start-value, $end-value);
-    $expect: (start: 20px, change: 60px);
+    $expect: (start: 20px, change: 60px),;
 
     @include assert-equal($test, $expect,
       'Must be a list of start values and its difference');

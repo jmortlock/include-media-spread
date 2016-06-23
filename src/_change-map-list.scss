@@ -18,5 +18,5 @@
     $change-map: (start: $start, change: $change);
     $change-map-list: join($change-map-list, $change-map, comma);
   }
-  @return clean-list($change-map-list);
+  @return $change-map-list;
 }

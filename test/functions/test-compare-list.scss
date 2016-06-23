@@ -16,7 +16,7 @@
     $end: 80px;
 
     $test: compare-lists($start, $end);
-    $expect: 70px;
+    $expect: 70px,;
     @include assert-equal($test, $expect,
       'returns a list of changed value');
 

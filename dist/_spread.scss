@@ -15,7 +15,7 @@
 
   }
 
-  @return clean-list( $adjusted-values);
+  @return clean-list($adjusted-values);
 }
 
 @function change-map-list($start-value, $end-value) {
@@ -38,7 +38,7 @@
     $change-map: (start: $start, change: $change);
     $change-map-list: join($change-map-list, $change-map, comma);
   }
-  @return clean-list($change-map-list);
+  @return $change-map-list;
 }
 
 @function compare-lists($start, $end) {
@@ -52,7 +52,7 @@
     $change-list: join($change-list, $change, comma);
   }
 
-  @return clean-list($change-list);
+  @return $change-list;
 }
 
 // adapted from http://www.kirupa.com/forum/showthread.php?378287-Robert-Penner-s-Easing-Equations-in-Pure-JS-%28no-jQuery%29

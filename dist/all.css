@@ -1,0 +1,174 @@
+/* # Easing ---------- */
+/* Ease linear [function] */
+[data-module="Easing"] [data-test="Ease linear [function]"] .assert-equal {
+  -result: PASS;
+  -description: "returns the adjusted value back"; }
+
+/* Ease in-quad [function] */
+[data-module="Easing"] [data-test="Ease in-quad [function]"] .assert-equal {
+  -result: PASS;
+  -description: "returns the adjusted value back"; }
+
+/* Ease out-quad [function] */
+[data-module="Easing"] [data-test="Ease out-quad [function]"] .assert-equal {
+  -result: PASS;
+  -description: "returns the adjusted value back"; }
+
+/* Ease in-cubic [function] */
+[data-module="Easing"] [data-test="Ease in-cubic [function]"] .assert-equal {
+  -result: PASS;
+  -description: "returns the adjusted value back"; }
+
+/* Ease out-cubic [function] */
+[data-module="Easing"] [data-test="Ease out-cubic [function]"] .assert-equal {
+  -result: PASS;
+  -description: "returns the adjusted value back"; }
+
+/* Ease in-quart [function] */
+[data-module="Easing"] [data-test="Ease in-quart [function]"] .assert-equal {
+  -result: PASS;
+  -description: "returns the adjusted value back"; }
+
+/* Ease out-quart [function] */
+[data-module="Easing"] [data-test="Ease out-quart [function]"] .assert-equal {
+  -result: PASS;
+  -description: "returns the adjusted value back"; }
+
+/* Ease in-quint [function] */
+[data-module="Easing"] [data-test="Ease in-quint [function]"] .assert-equal {
+  -result: PASS;
+  -description: "returns the adjusted value back"; }
+
+/* Ease out-quint [function] */
+[data-module="Easing"] [data-test="Ease out-quint [function]"] .assert-equal {
+  -result: PASS;
+  -description: "returns the adjusted value back"; }
+
+/* # Split Values ---------- */
+/* Split 1 value [function] */
+[data-module="Split Values"] [data-test="Split 1 value [function]"] .assert-equal {
+  -result: PASS;
+  -description: "returns the adjusted top right bottom left value back"; }
+
+/* Split 2 values [function] */
+[data-module="Split Values"] [data-test="Split 2 values [function]"] .assert-equal {
+  -result: PASS;
+  -description: "returns the adjusted top right bottom left value back"; }
+
+/* Split 3 values [function] */
+[data-module="Split Values"] [data-test="Split 3 values [function]"] .assert-equal {
+  -result: PASS;
+  -description: "returns the adjusted top right bottom left value back"; }
+
+/* Split 4 values [function] */
+[data-module="Split Values"] [data-test="Split 4 values [function]"] .assert-equal {
+  -result: PASS;
+  -description: "returns the adjusted top right bottom left value back"; }
+
+/* # Compare lists ---------- */
+/* Combines lists by matching pairs [function] */
+[data-module="Compare lists"] [data-test="Combines lists by matching pairs [function]"] .assert-equal {
+  -result: PASS;
+  -description: "returns list of changed value pairs"; }
+
+/* Compare single value list [function] */
+[data-module="Compare lists"] [data-test="Compare single value list [function]"] .assert-equal {
+  -result: PASS;
+  -description: "returns a list of changed value"; }
+
+/* # Change Values ---------- */
+/* Compare single values [function] */
+[data-module="Change Values"] [data-test="Compare single values [function]"] .assert-equal {
+  -result: PASS;
+  -description: "Must be a list of start values and its difference"; }
+
+/* Compare 2 value pairs [function] */
+[data-module="Change Values"] [data-test="Compare 2 value pairs [function]"] .assert-equal {
+  -result: PASS;
+  -description: "Must be a list of start values and its difference"; }
+
+/* Compare single value with multiple values [function] */
+[data-module="Change Values"] [data-test="Compare single value with multiple values [function]"] .assert-equal {
+  -result: PASS;
+  -description: "Must be a list of start values and its difference"; }
+
+/* # Adjust Values ---------- */
+/* Adjust 1 values [function] */
+[data-module="Adjust Values"] [data-test="Adjust 1 values [function]"] .assert-equal {
+  -result: PASS;
+  -description: "Must be a list of start values and its difference"; }
+
+/* Adjust 2 values [function] */
+[data-module="Adjust Values"] [data-test="Adjust 2 values [function]"] .assert-equal {
+  -result: PASS;
+  -description: "Must be a list of start values and its difference"; }
+
+/* Adjust 4 values [function] */
+[data-module="Adjust Values"] [data-test="Adjust 4 values [function]"] .assert-equal {
+  -result: PASS;
+  -description: "Must be a list of start values and its difference"; }
+
+/* # Spread Mixin ---------- */
+/* Font Size [mixin] */
+[data-module="Spread Mixin"] [data-test="Font Size [mixin]"] [data-assert="Outputs a scaling font size over media breakpoints"] .input .heading-1 {
+  font-size: 1rem; }
+  @media (min-width: 320px) {
+    [data-module="Spread Mixin"] [data-test="Font Size [mixin]"] [data-assert="Outputs a scaling font size over media breakpoints"] .input .heading-1 {
+      font-size: 1.67rem; } }
+  @media (min-width: 768px) {
+    [data-module="Spread Mixin"] [data-test="Font Size [mixin]"] [data-assert="Outputs a scaling font size over media breakpoints"] .input .heading-1 {
+      font-size: 2.33rem; } }
+  @media (min-width: 1024px) {
+    [data-module="Spread Mixin"] [data-test="Font Size [mixin]"] [data-assert="Outputs a scaling font size over media breakpoints"] .input .heading-1 {
+      font-size: 3rem; } }
+
+[data-module="Spread Mixin"] [data-test="Font Size [mixin]"] [data-assert="Outputs a scaling font size over media breakpoints"] .expect .heading-1 {
+  font-size: 1rem; }
+
+@media (min-width: 320px) {
+  [data-module="Spread Mixin"] [data-test="Font Size [mixin]"] [data-assert="Outputs a scaling font size over media breakpoints"] .expect .heading-1 {
+    font-size: 1.67rem; } }
+
+@media (min-width: 768px) {
+  [data-module="Spread Mixin"] [data-test="Font Size [mixin]"] [data-assert="Outputs a scaling font size over media breakpoints"] .expect .heading-1 {
+    font-size: 2.33rem; } }
+
+@media (min-width: 1024px) {
+  [data-module="Spread Mixin"] [data-test="Font Size [mixin]"] [data-assert="Outputs a scaling font size over media breakpoints"] .expect .heading-1 {
+    font-size: 3rem; } }
+
+/* # Spread Mixin ---------- */
+/* Padding with mixed values [mixin] */
+[data-module="Spread Mixin"] [data-test="Padding with mixed values [mixin]"] [data-assert="Outputs scaling padding values over media breakpoints"] .input {
+  padding: 15px; }
+  @media (min-width: 320px) {
+    [data-module="Spread Mixin"] [data-test="Padding with mixed values [mixin]"] [data-assert="Outputs scaling padding values over media breakpoints"] .input {
+      padding: 16.67px 20px 13.33px 20px; } }
+  @media (min-width: 768px) {
+    [data-module="Spread Mixin"] [data-test="Padding with mixed values [mixin]"] [data-assert="Outputs scaling padding values over media breakpoints"] .input {
+      padding: 18.33px 25px 11.67px 25px; } }
+  @media (min-width: 1024px) {
+    [data-module="Spread Mixin"] [data-test="Padding with mixed values [mixin]"] [data-assert="Outputs scaling padding values over media breakpoints"] .input {
+      padding: 20px 30px 10px 30px; } }
+
+[data-module="Spread Mixin"] [data-test="Padding with mixed values [mixin]"] [data-assert="Outputs scaling padding values over media breakpoints"] .expect .module-block {
+  padding: 15px; }
+
+@media (min-width: 320px) {
+  [data-module="Spread Mixin"] [data-test="Padding with mixed values [mixin]"] [data-assert="Outputs scaling padding values over media breakpoints"] .expect .module-block {
+    padding: 16.67px 20px 13.33px 20px; } }
+
+@media (min-width: 768px) {
+  [data-module="Spread Mixin"] [data-test="Padding with mixed values [mixin]"] [data-assert="Outputs scaling padding values over media breakpoints"] .expect .module-block {
+    padding: 18.33px 25px 11.67px 25px; } }
+
+@media (min-width: 1024px) {
+  [data-module="Spread Mixin"] [data-test="Padding with mixed values [mixin]"] [data-assert="Outputs scaling padding values over media breakpoints"] .expect .module-block {
+    padding: 20px 30px 10px 30px; } }
+
+/* # SUMMARY ---------- */
+/* 23 Tests: */
+/*  - 21 Passed */
+/*  - 0 Failed */
+/*  - 2 Output to CSS */
+/* -------------------- */

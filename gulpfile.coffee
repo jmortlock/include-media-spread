@@ -12,7 +12,10 @@ _paths = {
   dist_file: '_spread.scss'
   tests: './test/all.scss'
 
-  includes: [ 'node_modules/sass-true/sass' ]
+  includes: [
+    'node_modules/sass-true/sass'
+    'node_modules/include-media/dist'
+  ]
 }
 
 gulp.task 'merge', ->
